@@ -6,7 +6,7 @@ function getRandom1(min, max) {
     }
     return Math.floor(Math.random() * (max - min + 1)) + min; 
   }
-
+  getRandom1(0, 100);
 
 function getRandom2(min, max) {
     if ((min < 0) || (min >= max)) {
@@ -14,3 +14,5 @@ function getRandom2(min, max) {
     }
     return Math.random() * (max - min) + min;
   }
+
+  getRandom2(0.25, 99.3);
