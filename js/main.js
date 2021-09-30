@@ -1,18 +1,19 @@
-function getRandom1(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
+function getRandomInteger(min, max) {
     if ((min < 0) || (min >= max)) {
-        return false;
+        return null;
     }
     return Math.floor(Math.random() * (max - min + 1)) + min; 
   }
-  getRandom1(0, 100);
+ 
 
-function getRandom2(min, max) {
-    if ((min < 0) || (min >= max)) {
-        return false;
+function getRandomFloat(min, max, precision) {
+    if (min < 0 || min >= max) {
+      return null;
     }
-    return Math.random() * (max - min) + min;
+    return Number((Math.random() * (max - min) + min).toFixed(precision));
   }
 
-  getRandom2(0.25, 99.3);
+
+
+
+
