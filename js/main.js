@@ -14,3 +14,6 @@ function getRandomFloat(min, max, precision) {
 }
 getRandomFloat(0.5, 98.99, 4);
 
+let author = {};
+let offer = {};
+let location = {};
